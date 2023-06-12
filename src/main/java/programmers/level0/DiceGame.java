@@ -11,10 +11,10 @@ public class DiceGame {
 
     public static void main(String[] args){
         DiceGameSolution diceGameSolution = new DiceGameSolution();
-        //int score = diceGameSolution.solution(2, 2, 2, 2);
+        int score = diceGameSolution.solution(2, 2, 2, 2);
         //int score = diceGameSolution.solution(4, 1, 4, 4);
         //int score = diceGameSolution.solution(6, 3, 3, 6);
-        int score = diceGameSolution.solution(2, 5, 2, 6);
+        //int score = diceGameSolution.solution(2, 5, 2, 6);
         System.out.println(
                 score
         );
@@ -50,7 +50,8 @@ class DiceGameSolution{
 
         int maxCount = counts.stream().max(Comparator.comparing(Integer::intValue)).get();
         int minCount = counts.stream().min(Comparator.comparing(Integer::intValue)).get();
-        if(maxCount == 1 && minCount == 1){//모두 맞은 경우
+        System.out.println("max="+maxCount+", min="+minCount);
+        if(maxCount == 4 && minCount == 4){//모두 맞은 경우
             int key = diceScoreMap.keySet().stream().findFirst().get();
             score = 1111 * key;
         }else if(maxCount == 3 && minCount == 1){//3개가 같고 1개가 다르다.
