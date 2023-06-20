@@ -1,4 +1,4 @@
-package object.chap02;
+package object.chap02.myway;
 
 public interface DiscountPolicy {
 

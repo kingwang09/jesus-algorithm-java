@@ -1,4 +1,4 @@
-package object.chap02;
+package object.chap02.myway;
 
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;

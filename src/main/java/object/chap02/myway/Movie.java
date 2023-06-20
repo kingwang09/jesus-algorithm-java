@@ -1,4 +1,4 @@
-package object.chap02;
+package object.chap02.myway;
 
 public class Movie {
     private String title;

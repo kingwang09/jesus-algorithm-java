@@ -1,4 +1,4 @@
-package object.chap02;
+package object.chap02.myway;
 
 public class DiscountConditionSequence implements DiscountCondition{
     private int discountSequence;
