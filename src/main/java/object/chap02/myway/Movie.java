@@ -7,6 +7,8 @@ public class Movie {
 
     private int runningMinutes;
 
+    private DiscountPolicy discountPolicy; //movie당 할인 정책은 0 or 1개를 갖는다.
+
 
     public long getPrice(){
         return this.price;
